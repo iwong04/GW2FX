@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane prefHeight="507.0" prefWidth="700.0">
+         <top>
+            <Text fill="#6f6a6a" stroke="#40330d" strokeType="OUTSIDE" strokeWidth="0.5" text="Guild Wars 2 TP" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="24.0" />
+               </font>
+            </Text>
+         </top>
+         <center>
+            <TableView fx:id="tableView" prefHeight="477.0" prefWidth="677.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="140.0" text="ID" />
+                <TableColumn fx:id="buyColumn" prefWidth="140.0" text="Buy" />
+                  <TableColumn fx:id="sellColumn" prefWidth="140.0" text="Sell" />
+                  <TableColumn fx:id="supplyColumn" prefWidth="140.0" text="Supply" />
+                  <TableColumn fx:id="demandColumn" prefWidth="140.0" text="Demand" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="Button">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font></Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
